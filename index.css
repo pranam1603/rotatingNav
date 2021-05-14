@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', 'sans-serif';
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+    margin: 0;   
+}
+
+.container.showNav{
+    transform: rotate(-20deg);
+
+}
+
+.container{
+    background-color: white;
+    padding: 40px;
+    width: 100vw;
+    min-height: 100vh;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.container.showNav .circle{
+    transform: rotate(-90deg);
+}
+
+.circle{
+    background-color: teal;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    transform: translateX(-150%);
+    transition: transform 0.5s ease-in;
+    color: white;
+}
+
+.container.showNav + nav{
+    transform: translateX(0);
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li{
+    margin: 40px 0;
+    letter-spacing: 2px;
+}
+
+ul li + li {
+    margin-left: 20px;
+}
+
+ul li + li + li{
+    margin-left: 40px;
+}
+
+
+nav li i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: teal;
+}
+
+button{
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+button#open {
+    left: 60%;
+}
+
+button#close {
+    left: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content{
+    margin: 80px auto;
+    margin-left:50px ;
+}
+
+.content small{
+    font-style: italic;
+    color: #555;
+}
+
+p{
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+    background-color: #fff;
+    transform-origin: top left;
+    transition: transform 0.6s linear;
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container.showNav{
+    transform: rotate(-20deg);
+    
+}
+
+img{
+    width: 100%;
+}
+
+.circle-container{
+    top: -100px;
+    left: -100px;
+    position: fixed;
+}
+
+.circle{
+    background-color: rgb(248, 160, 175);
+    position: relative;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+button#open{
+    left: 60%;
+}
+
+button#close{
+    left: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+small{
+    font-style: italic;
+    color: #555;
+}
+
+p{
+    color: #333;
+    line-height: 1.5;
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    z-index: 100;
+    left: 0px;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+}
+
+.container.showNav .circle{
+    transform: rotate(-90deg);
+}
+
+.container.container.showNav + nav{
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li{
+    margin: 40px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+ul li i{
+    font-size: 20px;
+    color: rgb(248, 160, 175);
+    margin-left: 10px;
+}
+
+ul li + li{
+    margin-left: 15px;
+}
+
+ul li + li + li{
+    margin-left: 30px;
+} */
